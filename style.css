@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Glassmorphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* animation flottante */
+.flottant {
+  position: relative;
+  animation: flotter 3s ease-in-out infinite;
+}
+
+@keyframes flotter {
+  0%,
+  100% {
+    top: 0;
+  }
+  50% {
+    top: -20px;
+  }
+}
+
+/* motif flottant */
+.motif {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position:absolute;
+}
+.motif:nth-child(1) {
+  top:20px;
+  left: 30px;
+}
+
+.motif:nth-child(2) {
+  bottom: 20px;
+  right: 40px;
+}
+
+textarea {
+  resize: none;
+}
+

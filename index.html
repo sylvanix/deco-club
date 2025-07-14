@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Header Glassmorphism</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="">
+  <!-- Navbar -->
+  <header class="glass fixed top-0 left-0 w-full z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-4 py-3">
+      <!-- Logo -->
+      <div class="text-xl font-bold"><span class="bg-[#686AEB] text-white px-4 py-2 rounded-sm">Deco</span><span
+          class="bg-white text-[#686AEB] py-2 rounded-sm">Club</span></div>
+
+      <!-- Navigation Links -->
+      <nav class="hidden md:flex space-x-6">
+        <a href="#home" class="font-semibold hover:underline text-gray-700">Home</a>
+        <a href="#projects" class="font-semibold hover:underline text-gray-700">Projects</a>
+        <a href="#services" class="font-semibold hover:underline text-gray-700">Services</a>
+        <a href="#testimonials" class="font-semibold hover:underline text-gray-700">Testimonials</a>
+        <a href="#contacs" class="font-semibold hover:underline text-gray-700">Contact</a>
+      </nav>
+
+      <!-- Sign Up Button -->
+      <div class="hidden md:block">
+        <button class="bg-[#686AEB] text-white px-4 py-2 rounded-lg hover:bg-gray-200 transition">
+          Sign Up
+        </button>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <div class="md:hidden">
+        <button id="menu-btn" class="focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+      class="md:hidden hidden absolute top-full left-0 w-full bg-gray-800 glass backdrop-blur-md z-5">
+      <ul class="flex flex-col items-center space-y-4 py-6">
+        <li><a href="#home" class="menu-link text-white">Home</a></li>
+        <li><a href="#projects" class="menu-link text-white">Projects</a></li>
+        <li><a href="#services" class="menu-link text-white">Services</a></li>
+        <li><a href="#testimonials" class="menu-link text-white">Testimonials</a></li>
+        <li><a href="#contact" class="menu-link text-white">Contact</a></li>
+        <li>
+          <button class="bg-[#686AEB] text-white px-4 py-2 rounded-lg hover:bg-gray-200 transition">
+            Sign Up
+          </button>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="pt-20 px-6">
+    <section class="w-full px-6 py-16 bg-[#ececf8]" id="home">
+      <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+        <!-- Texte -->
+        <div class="w-full md:w-1/2 text-center md:text-left">
+          <h1 class="text-4xl md:text-5xl font-black mb-4">
+            We Build <br />Your Dream
+          </h1>
+          <p class="text-lg mb-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Inventore, voluptas error. Ut minus itaque quia in doloribus
+            cupiditate?
+          </p>
+          <button class="bg-[#686AEB] font-bold text-white px-6 py-3 rounded-lg hover:bg-[#5558f5] transition">
+            Get Started
+          </button>
+        </div>
+
+        <!-- Image -->
+        <div class="w-full md:w-1/2 flex justify-center relative">
+          <img src="/assets/img1.jpg" alt="Hero Image" class="w-full max-w-md rounded-lg shadow-lg flottant"
+            id="hero-img" />
+          <div class="motif flex items-center justify-center text-pink-600">
+            <i class="fa-solid fa-pen-nib"></i>
+          </div>
+          <div class="motif flex items-center justify-center text-indigo-600">
+            <i class="fa-solid fa-palette"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Projects -->
+    <section class="mt-20 px-4 md:px-10" id="projects">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <p class="text-[#686AEB] text-sm font-semibold tracking-wide uppercase">
+          Our achievements
+        </p>
+        <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+         Discover our most beautiful projects <br class="hidden md:block" />
+          organization and interior decoration
+        </h1>
+      </div>
+
+      <!-- Cards Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Projet 1 -->
+        <div
+          class="bg-white/5 backdrop-blur-md rounded-xl shadow-lg overflow-hidden p-4 transition hover:scale-105 hover:shadow-1xl">
+          <img class="rounded-lg w-full h-auto" src="/assets/img2.jpg" alt="Mariage champêtre élégant" />
+          <div class="text-center mt-4">
+            <p class="font-bold text-lg">Country wedding</p>
+            <p class="mt-2">
+              <i class="fa-solid fa-check p-2 bg-[#686AEB] rounded-full text-white mr-2"></i>Natural floral decor, wooden furniture, and a magical atmosphere.
+            </p>
+          </div>
+        </div>
+
+        <!-- Projet 2 -->
+        <div
+          class="bg-white/5 backdrop-blur-md rounded-xl shadow-lg overflow-hidden p-4 transition hover:scale-105 hover:shadow-1xl">
+          <img class="rounded-lg w-full h-auto" src="/assets/img3.jpg" alt="Aménagement bureau moderne" />
+          <div class="text-center mt-4">
+            <p class="font-bold text-lg">Corporate office</p>
+            <p class="mt-2">
+              <i class="fa-solid fa-check p-2 bg-[#686AEB] rounded-full text-white mr-2"></i>Space optimization
+with designer furniture and a productive atmosphere.
+            </p>
+          </div>
+        </div>
+
+        <!-- Projet 3 -->
+        <div
+          class="bg-white/5 backdrop-blur-md rounded-xl shadow-lg overflow-hidden p-4 transition hover:scale-105 hover:shadow-1xl">
+          <img class="rounded-lg w-full h-auto" src="/assets/img4.jpg" alt="Salon moderne décoré" />
+          <div class="text-center mt-4">
+            <p class="font-bold text-lg">Cozy apartment</p>
+            <p class="mt-2">
+              <i class="fa-solid fa-check p-2 bg-[#686AEB] rounded-full text-white mr-2"></i>Warm furnishings, soft colors, and custom-made decorative objects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Expertise -->
+    <section class="mt-[100px]" id="services">
+      <p class="text-center text-[#686AEB] font-bold">Our Expertise</p>
+      <h1 class="text-center text-4xl font-bold">
+        We're an agency tailored <br />
+        to all clients need's that <br />
+        always delivers
+      </h1>
+      <div class="mb-8"></div>
+      <!-- Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card -->
+        <div class="flex flex-col items-center px-4 py-6">
+          <i class="fa-solid fa-calendar-check text-4xl text-gray-900 flottant"></i>
+          <p class="text-[#686AEB] mt-4 font-bold">Event Planning</p>
+          <p class="font-bold m-1">$ 450</p>
+          <p class="text-center m-2">
+            From corporate gatherings to dreamy weddings, we plan, coordinate,
+            and execute memorable experiences tailored to your vision.
+          </p>
+        </div>
+
+        <!-- Card -->
+        <div class="flex flex-col items-center px-4 py-6 rounded-lg shadow-lg">
+          <i class="fa-solid fa-couch text-4xl text-gray-900 flottant"></i>
+          <p class="text-[#686AEB] mt-4 font-bold">Interior Design</p>
+          <p class="font-bold m-1">$ 350</p>
+          <p class="text-center m-2">
+            We transform living and working spaces into stylish, functional,
+            and inspiring environments that reflect your identity.
+          </p>
+        </div>
+
+        <!-- Card -->
+        <div class="flex flex-col items-center px-4 py-6">
+          <i class="fa-solid fa-palette text-4xl text-gray-900 flottant"></i>
+          <p class="text-[#686AEB] mt-4 font-bold">Custom Decoration</p>
+          <p class="font-bold m-1">$ 590</p>
+          <p class="text-center m-2">
+            Whether it's a one-time event or a permanent space, we craft
+            unique decorative setups that elevate your ambiance and wow your
+            guests.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-[100px] px-10" id="testimonials">
+      <p class="text-center text-[#686AEB] font-bold">Testimonials</p>
+      <h1 class="text-center text-4xl font-bold"><br /></h1>
+      <div class="mb-8"></div>
+
+      <!-- Grille -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-10">
+        <!-- Card -->
+        <div class="rounded-xl shadow-lg p-6 text-white">
+          <!-- Profil -->
+          <div class="flex items-center gap-4 mb-4">
+            <img src="/assets/person/person1.jpg" alt="Client photo" class="w-12 h-12 rounded-full object-cover" />
+            <div>
+              <p class="font-semibold text-[#686AEB]">Mariam ASHA</p>
+              <p class="text-sm text-gray-400">Interior Designer</p>
+            </div>
+          </div>
+
+          <!-- Témoignage -->
+          <p class="text-gray-600 mb-4">
+            “Working with this agency was a delight. Their attention to detail
+            and creativity brought my vision to life better than I imagined.”
+          </p>
+
+          <!-- Étoiles -->
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="rounded-xl shadow-lg p-6 text-white">
+          <!-- Profil -->
+          <div class="flex items-center gap-4 mb-4">
+            <img src="/assets/person/person2.jpg" alt="Client photo" class="w-12 h-12 rounded-full object-cover" />
+            <div>
+              <p class="font-semibold text-[#686AEB]">Michael Carter</p>
+              <p class="text-sm text-gray-400">Wedding Planner</p>
+            </div>
+          </div>
+
+          <!-- Témoignage -->
+          <p class="text-gray-600 mb-4">
+            “They handled every detail of our wedding with such grace and
+            professionalism. It truly felt like a dream come true.”
+          </p>
+
+          <!-- Étoiles -->
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+        </div>
+
+        <!-- Card -->
+        <div class="rounded-xl shadow-lg p-6 text-white">
+          <!-- Profil -->
+          <div class="flex items-center gap-4 mb-4">
+            <img src="/assets/person/person3.jpg" alt="Client photo" class="w-12 h-12 rounded-full object-cover" />
+            <div>
+              <p class="font-semibold text-[#686AEB]">Amira Lopez</p>
+              <p class="text-sm text-gray-400">Homeowner</p>
+            </div>
+          </div>
+
+          <!-- Témoignage -->
+          <p class="text-gray-600 mb-4">
+            “The interior makeover exceeded my expectations. Every room now
+            feels warmer, brighter, and perfectly tailored to my taste.”
+          </p>
+
+          <!-- Étoiles -->
+          <div class="flex gap-1 text-yellow-400 text-lg">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-[100px] min-h-screen flex items-center justify-center px-6 py-12" id="contact">
+      <div class="bg-white p-8 rounded-xl shadow-xl w-full max-w-2xl">
+      <p class="text-center text-[#686AEB] font-bold">Contact us</p>
+      <h1 class="text-center text-4xl font-bold">Let us handle your project,<br />professionally.</h1>
+      <div class="mb-8"></div>
+
+      <!-- Formulaire -->
+      <form id="contactForm" class="space-y-6">
+
+        <!-- Message de confirmation -->
+        <div id="successMessage" class="hidden text-green-600 text-center font-medium">
+          ✅ Your message has been sent successfully!
+        </div>
+
+        <!-- Nom -->
+        <div>
+          <label class="block mb-2 font-medium">Your Name</label>
+          <input type="text" name="name" required placeholder="John Doe"
+            class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+
+        <!-- Email -->
+        <div>
+          <label class="block mb-2 font-medium">Your Email</label>
+          <input type="email" name="email" required placeholder="you@example.com"
+            class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+        </div>
+
+        <!-- Message -->
+        <div>
+          <label class="block mb-2 font-medium">Your Message</label>
+          <textarea name="message" rows="5" required placeholder="Write your message..."
+            class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+        </div>
+
+        <!-- Bouton -->
+        <div class="text-center">
+          <button type="submit"
+            class="bg-indigo-700 text-white px-6 py-3 rounded-lg hover:bg-indigo-800 transition">Send Message</button>
+        </div>
+
+      </form>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="bg-indigo-900 text-white py-12 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+      <!-- Bloc Logo + Description -->
+      <div>
+        <div class="flex items-center gap-3 mb-4">
+          <img src="/assets/logo/logo.png" alt="Logo" class="w-10 h-10 object-cover" />
+          <span class="text-xl font-bold">DecoClub</span>
+        </div>
+        <p class="text-sm text-gray-300">
+          We design and organize beautiful spaces and events tailored to your
+          vision.
+        </p>
+      </div>
+
+      <!-- Navigation -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Services</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#">Event Planning</a></li>
+          <li><a href="#">Interior Design</a></li>
+          <li><a href="#">Custom Decoration</a></li>
+          <li><a href="#">Consulting</a></li>
+        </ul>
+      </div>
+
+      <!-- About / Links -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">About</h4>
+        <ul class="space-y-2 text-sm text-gray-300">
+          <li><a href="#">Our Story</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Stay Connected</h4>
+        <p class="text-sm text-gray-300 mb-4">Follow us on social media</p>
+        <div class="flex gap-4 text-xl">
+          <a href="#"><i class="fa-brands fa-facebook-f text-blue-400 hover:text-white"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram text-pink-400 hover:text-white"></i></a>
+          <a href="#"><i class="fa-brands fa-pinterest-p text-red-400 hover:text-white"></i></a>
+          <a href="#"><i class="fa-brands fa-whatsapp text-green-400 hover:text-white"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="mt-12 border-t border-white/10 pt-6 text-center text-sm text-gray-400">
+      &copy; 2025 DecoAgency. All rights reserved.
+      <p>Designed by <span class="font-bold">Sylvanius AHIDJE</span></p>
+    </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+
+</html>

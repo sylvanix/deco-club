@@ -40,5 +40,5 @@ If you found this useful or inspiring, feel free to give it a ⭐️ on GitHub!
 Just clone the repo and open `index.html` in your browser:
 
 ```bash
-git clone https://github.com/sylvanix/yourrepo.git
+git clone https://github.com/sylvanix/deco-club.git
 

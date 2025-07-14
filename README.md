@@ -1,7 +1,7 @@
 # 🖌️ Modern Agency Website — by Sylvanius Rosebéri
 
 
-![Stars](https://img.shields.io/github/stars/sylvanix/deco-club.git?style=flat-square)
+
 ![HTML](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Made%20with-TailwindCSS-38bdf8?logo=tailwindcss&logoColor=white&style=flat-square)
